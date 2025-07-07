@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil</title>
+  <style>
+    body {
+      background-color: #e3f2fd; /* cor suave de fundo */
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #1976d2;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    ul {
+      line-height: 2; /* espaçamento entre os itens */
+    }
+
+    img {
+      width: 300px;
+      border-radius: 15px; /* bordas arredondadas */
+      display: block;
+      margin: 20px auto;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 2px solid #1976d2;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    a {
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff4081; /* muda de cor ao passar o mouse */
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-style: italic;
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matheus Marques</h1>
+
+  <p>
+    Olá! Meu nome é Matheus Marques, tenho 26 anos e moro em Sao Paulo. Sou apaixonado por tecnologia, desenvolvimento de sistemas e gosto de aprender sobre tecnologias.
+  </p>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <p id="mensagem"></p>
+
+  <h2>Meus hobbies favoritos</h2>
+  <ul>
+    <li>Aprender a Programar</li>
+    <li>Jogar videogame</li>
+    <li>Ficar com a famila</li>
+  </ul>
+  
+  <img src="https://napratica.org.br/wp-content/uploads/2017/07/destaque-videogame.jpeg" alt="Jogando">
+
+  <h2>Países que quero visitar</h2>
+  <table>
+    <tr>
+      <td>Japão</td>
+      <td><img src="https://flagcdn.com/w320/jp.png" width="100" /></td>
+    </tr>
+    <tr>
+      <td>Itália</td>
+      <td><img src="https://flagcdn.com/w320/it.png" width="100" /></td>
+    </tr>
+    <tr>
+      <td>Canadá</td>
+      <td><img src="https://flagcdn.com/w320/ca.png" width="100" /></td>
+    </tr>
+  </table>
+
+  <p>Visite um dos meus sites favoritos: <a href="https://www.crunchyroll.com" target="_blank">Crunchyroll</a></p>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").textContent = "Seja bem-vindo ao meu mundo!";
+    }
+  </script>
+</body>
+</html>
